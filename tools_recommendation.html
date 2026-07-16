@@ -35,16 +35,19 @@ body{font-family:'Inter',sans-serif;background:#f1f3f7;color:#0f172a;font-size:1
 .pill{font-size:9px;font-weight:600;padding:2px 7px;border-radius:20px}
 .pnil{background:#dcfce7;color:#166534}
 .pcst{background:#fef3c7;color:#92400e}
-.sum{background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden}
-.shdr{display:grid;grid-template-columns:1fr auto auto;gap:10px;padding:6px 12px;border-bottom:1px solid #e2e8f0;background:#f8fafc}
-.shdr span{font-size:9.5px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.07em}
-.sr{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:7px 12px;border-bottom:1px solid #f1f5f9;font-size:11.5px}
-.sr:last-child{border-bottom:none;background:#f8fafc;font-weight:600;font-size:12px}
-.st{display:flex;align-items:center;gap:7px;color:#0f172a}
-.si{width:18px;height:18px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0}
-.sp{font-size:10px;color:#64748b}
-.sprice{text-align:right;font-weight:500;color:#0f172a;white-space:nowrap}
-.sset{text-align:right;font-size:10.5px;white-space:nowrap}
+.sum{background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow-x:auto}
+.sumt{display:table;width:100%;border-collapse:collapse;table-layout:fixed}
+.shdr{display:table-row}
+.shdr span{display:table-cell;font-size:9px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;padding:7px 10px;background:#f8fafc;border-bottom:1px solid #e2e8f0;vertical-align:middle}
+.sr{display:table-row;font-size:11px}
+.sr>div{display:table-cell;padding:8px 10px;border-bottom:1px solid #f1f5f9;vertical-align:top;line-height:1.4}
+.st{font-weight:600;color:#0f172a;font-size:11.5px}
+.sp{font-size:9.5px;color:#64748b;margin-top:1px;line-height:1.3}
+.sgap{font-size:10px;color:#94a3b8;line-height:1.4}
+.simp{font-size:10px;color:#334155;line-height:1.4}
+.simp .ck2{color:#16a34a;font-weight:700;margin-right:3px}
+.sprice{font-size:10.5px;color:#0f172a;font-weight:500;line-height:1.4}
+.scost-sub{font-size:9px;color:#94a3b8;margin-top:2px}
 .footer{text-align:center;font-size:10px;color:#94a3b8;margin-top:12px}
 @media(max-width:700px){.grid{grid-template-columns:1fr}}
 @media print{body{background:#fff;padding:10px}.page{max-width:100%}}
@@ -62,179 +65,6 @@ body{font-family:'Inter',sans-serif;background:#f1f3f7;color:#0f172a;font-size:1
     <span class="hbg">9 tools</span>
     <span class="hbg hi">₹3,09,876 / year + ₹40,000 setup</span>
   </div>
-</div>
-
-<div class="sl">Recommended tools</div>
-<div class="grid">
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#3b82f6">⊞</div><div><div class="tcn">Bitrix24</div><div class="tcp">Integrated Business Management Platform</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>Fragmented operations, no central platform</div>
-        <div class="gr"><div class="gd"></div>Limited cross-functional visibility</div>
-        <div class="gr"><div class="gd"></div>Manual workflow coordination</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>Unifies CRM, PM, HRMS and Marketing</div>
-        <div class="ir"><span class="ck">✓</span>Standardizes processes and governance</div>
-        <div class="ir"><span class="ck">✓</span>Enhances cross-functional collaboration</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹1,15,080 / year</div><div class="pn">100 users</div></div><span class="pill pcst">Setup ₹40,000</span></div>
-  </div>
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#25D366">💬</div><div><div class="tcn">AiSensy</div><div class="tcp">WhatsApp Business API and Engagement</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>No 24×7 customer engagement</div>
-        <div class="gr"><div class="gd"></div>Manual follow-ups, no lead nurturing</div>
-        <div class="gr"><div class="gd"></div>Limited engagement visibility</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>24×7 instant customer engagement</div>
-        <div class="ir"><span class="ck">✓</span>Automates broadcasts, reminders and follow-ups</div>
-        <div class="ir"><span class="ck">✓</span>Data-driven customer interaction insights</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹34,560 / year</div><div class="pn">+ Meta message charges</div></div><span class="pill pnil">Setup nil</span></div>
-  </div>
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#8b5cf6">🔭</div><div><div class="tcn">Periskope</div><div class="tcp">WhatsApp Collaboration and Governance</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>No centralized communication repository</div>
-        <div class="gr"><div class="gd"></div>Communication dependency on employees</div>
-        <div class="gr"><div class="gd"></div>No structured client handover</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>Centralizes customer conversation history</div>
-        <div class="ir"><span class="ck">✓</span>Enables seamless client handovers</div>
-        <div class="ir"><span class="ck">✓</span>Improves communication governance</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹28,800 / year</div><div class="pn">₹1,200/user/mo × 2 users</div></div><span class="pill pnil">Setup nil</span></div>
-  </div>
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#16a34a">📞</div><div><div class="tcn">RUNO AI</div><div class="tcp">Mobile CRM and Call Management Platform</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>Founder-driven lead management</div>
-        <div class="gr"><div class="gd"></div>No centralized lead tracking</div>
-        <div class="gr"><div class="gd"></div>Limited sales pipeline visibility</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>Centralizes and scales lead management</div>
-        <div class="ir"><span class="ck">✓</span>Automates reminders and follow-ups</div>
-        <div class="ir"><span class="ck">✓</span>Real-time sales pipeline visibility</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹14,376 / year</div><div class="pn">2 users</div></div><span class="pill pnil">Setup nil</span></div>
-  </div>
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#f4623a">M</div><div><div class="tcn">Milanote</div><div class="tcp">Design Collaboration and Visual Workspace</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>Fragmented design references</div>
-        <div class="gr"><div class="gd"></div>No centralized design workspace</div>
-        <div class="gr"><div class="gd"></div>Inconsistent design documentation</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>Centralizes concepts and material selections</div>
-        <div class="ir"><span class="ck">✓</span>Accelerates concept visualization</div>
-        <div class="ir"><span class="ck">✓</span>Improves stakeholder alignment</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹55,860 / year</div><div class="pn">10 users</div></div><span class="pill pnil">Setup nil</span></div>
-  </div>
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#0ea5e9;font-weight:700">R</div><div><div class="tcn">Read AI</div><div class="tcp">AI Meeting Assistant and Documentation</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>Manual meeting documentation</div>
-        <div class="gr"><div class="gd"></div>Missed action items and inconsistent follow-ups</div>
-        <div class="gr"><div class="gd"></div>Knowledge loss across projects</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>Auto-generates summaries and action items</div>
-        <div class="ir"><span class="ck">✓</span>Improves execution accountability</div>
-        <div class="ir"><span class="ck">✓</span>Strengthens organizational knowledge retention</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹17,100 / user / year</div><div class="pn">@ $1 = ₹94.73</div></div><span class="pill pnil">Setup nil</span></div>
-  </div>
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#00c4cc">✏</div><div><div class="tcn">Canva Pro</div><div class="tcp">Design and Marketing Content Creation</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>Non-standardized marketing collateral</div>
-        <div class="gr"><div class="gd"></div>Manual content creation, brand inconsistency</div>
-        <div class="gr"><div class="gd"></div>Limited design collaboration</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>Standardizes presentations and creatives</div>
-        <div class="ir"><span class="ck">✓</span>Accelerates content development</div>
-        <div class="ir"><span class="ck">✓</span>Enables collaborative design creation</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹4,000 / user / year</div><div class="pn">Per user</div></div><span class="pill pnil">Setup nil</span></div>
-  </div>
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#f97316">🎬</div><div><div class="tcn">HeyGen</div><div class="tcp">AI Video Creation Platform</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>Manual, high-effort video creation</div>
-        <div class="gr"><div class="gd"></div>Slow marketing content turnaround</div>
-        <div class="gr"><div class="gd"></div>Limited multimedia capability</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>AI-powered marketing and presentation videos</div>
-        <div class="ir"><span class="ck">✓</span>Reduces content production effort</div>
-        <div class="ir"><span class="ck">✓</span>Enables scalable content creation</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹33,000 / year</div><div class="pn">Flat annual</div></div><span class="pill pnil">Setup nil</span></div>
-  </div>
-
-  <div class="tc">
-    <div class="tch"><div class="tci" style="background:#6366f1;font-size:11px;font-weight:700">in</div><div><div class="tcn">SmartReach.io</div><div class="tcp">Sales Outreach and Prospecting Automation</div></div></div>
-    <div class="tcb">
-      <div><div class="tsl">Strategic gaps</div>
-        <div class="gr"><div class="gd"></div>Referral-dependent business development</div>
-        <div class="gr"><div class="gd"></div>No structured outbound prospecting</div>
-        <div class="gr"><div class="gd"></div>Manual outreach, inconsistent nurturing</div>
-      </div>
-      <div><div class="tsl">Business impact</div>
-        <div class="ir"><span class="ck">✓</span>Scalable outbound LinkedIn and email channel</div>
-        <div class="ir"><span class="ck">✓</span>Automates outreach and lead nurturing</div>
-        <div class="ir"><span class="ck">✓</span>Reduces manual BD effort significantly</div>
-      </div>
-    </div>
-    <div class="tcf"><div><div class="pv">₹11,100 / year</div><div class="pn">₹3,700/mo × 3 months</div></div><span class="pill pnil">Setup nil</span></div>
-  </div>
-
-</div>
-
-<div class="sl">Annual investment summary</div>
-<div class="sum">
-  <div class="shdr"><span>Tool</span><span style="text-align:right">Annual cost</span><span style="text-align:right">Setup</span></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#3b82f6">⊞</div><div><div>Bitrix24</div><div class="sp">Business Management</div></div></div><div class="sprice">₹1,15,080</div><div class="sset" style="color:#d97706">₹40,000</div></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#f4623a">M</div><div><div>Milanote</div><div class="sp">Design Workspace</div></div></div><div class="sprice">₹55,860</div><div class="sset" style="color:#16a34a">Nil</div></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#25D366">💬</div><div><div>AiSensy</div><div class="sp">WhatsApp Automation</div></div></div><div class="sprice">₹34,560</div><div class="sset" style="color:#16a34a">Nil</div></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#f97316">🎬</div><div><div>HeyGen</div><div class="sp">AI Video</div></div></div><div class="sprice">₹33,000</div><div class="sset" style="color:#16a34a">Nil</div></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#8b5cf6">🔭</div><div><div>Periskope</div><div class="sp">WA Governance</div></div></div><div class="sprice">₹28,800</div><div class="sset" style="color:#16a34a">Nil</div></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#0ea5e9;font-weight:700;font-size:10px">R</div><div><div>Read AI</div><div class="sp">Meeting Assistant</div></div></div><div class="sprice">₹17,100 / user</div><div class="sset" style="color:#16a34a">Nil</div></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#16a34a">📞</div><div><div>RUNO AI</div><div class="sp">Mobile CRM</div></div></div><div class="sprice">₹14,376</div><div class="sset" style="color:#16a34a">Nil</div></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#6366f1;font-size:9px;font-weight:700">in</div><div><div>SmartReach.io</div><div class="sp">Sales Outreach</div></div></div><div class="sprice">₹11,100</div><div class="sset" style="color:#16a34a">Nil</div></div>
-  <div class="sr"><div class="st"><div class="si" style="background:#00c4cc">✏</div><div><div>Canva Pro</div><div class="sp">Content Creation</div></div></div><div class="sprice">₹4,000 / user</div><div class="sset" style="color:#16a34a">Nil</div></div>
-  <div class="sr"><div class="st" style="font-weight:600">Total annual investment</div><div class="sprice" style="font-size:14px">₹3,09,876</div><div class="sset" style="color:#d97706;font-weight:600">₹40,000</div></div>
 </div>
 
 <div style="margin-top:12px">
@@ -312,6 +142,87 @@ body{font-family:'Inter',sans-serif;background:#f1f3f7;color:#0f172a;font-size:1
   </div>
 </div>
 </div>
+
+<div class="sl" style="margin-top:16px">Annual investment summary</div>
+<div class="sum"><div class="sumt">
+  <div class="shdr">
+    <span style="width:12%">Tool</span>
+    <span style="width:16%">Purpose</span>
+    <span style="width:24%">Strategic Gap Closed</span>
+    <span style="width:24%">Business Impact</span>
+    <span style="width:24%">Annual Cost</span>
+  </div>
+  <div class="sr">
+    <div class="st">Bitrix24</div>
+    <div class="sp">Integrated Business Mgmt Platform</div>
+    <div class="sgap">Fragmented ops; no central platform; low visibility</div>
+    <div class="simp"><span class="ck2">✓</span>Unifies CRM, PM, HRMS &amp; Marketing</div>
+    <div class="sprice">₹1,15,080/yr (100 users)<div class="scost-sub">+ ₹40,000 setup cost</div></div>
+  </div>
+  <div class="sr">
+    <div class="st">AiSensy</div>
+    <div class="sp">WhatsApp Business API &amp; Engagement</div>
+    <div class="sgap">No 24×7 engagement; manual follow-ups</div>
+    <div class="simp"><span class="ck2">✓</span>24×7 engagement; automated broadcasts &amp; reminders</div>
+    <div class="sprice">₹34,560/yr + msgs</div>
+  </div>
+  <div class="sr">
+    <div class="st">Periskope</div>
+    <div class="sp">WhatsApp Collaboration &amp; Governance</div>
+    <div class="sgap">No comms repository; employee-dependent handovers</div>
+    <div class="simp"><span class="ck2">✓</span>Centralizes conversations; seamless handovers</div>
+    <div class="sprice">₹28,800/yr (2 users)</div>
+  </div>
+  <div class="sr">
+    <div class="st">RUNO AI</div>
+    <div class="sp">Mobile CRM &amp; Call Management</div>
+    <div class="sgap">Founder-driven leads; no pipeline visibility</div>
+    <div class="simp"><span class="ck2">✓</span>Centralized leads; real-time pipeline visibility</div>
+    <div class="sprice">₹14,376/yr (2 users)</div>
+  </div>
+  <div class="sr">
+    <div class="st">Milanote</div>
+    <div class="sp">Design Collaboration &amp; Visual Workspace</div>
+    <div class="sgap">Fragmented references; manual collaboration</div>
+    <div class="simp"><span class="ck2">✓</span>Centralized design materials; faster visualization</div>
+    <div class="sprice">₹55,860/yr (10 users)</div>
+  </div>
+  <div class="sr">
+    <div class="st">Read.AI</div>
+    <div class="sp">AI Meeting Assistant &amp; Documentation</div>
+    <div class="sgap">Manual documentation; missed action items</div>
+    <div class="simp"><span class="ck2">✓</span>Auto summaries; captures action items</div>
+    <div class="sprice">₹17,100/user/yr</div>
+  </div>
+  <div class="sr">
+    <div class="st">Canva Pro</div>
+    <div class="sp">Design &amp; Marketing Content Creation</div>
+    <div class="sgap">Non-standard collateral; brand inconsistency</div>
+    <div class="simp"><span class="ck2">✓</span>Standardized creatives; brand consistency</div>
+    <div class="sprice">₹4,000/user/yr</div>
+  </div>
+  <div class="sr">
+    <div class="st">HeyGen</div>
+    <div class="sp">AI Video Creation</div>
+    <div class="sgap">Manual video creation; slow turnaround</div>
+    <div class="simp"><span class="ck2">✓</span>AI-powered videos; less production effort</div>
+    <div class="sprice">₹33,000/yr</div>
+  </div>
+  <div class="sr">
+    <div class="st">SmartReach.io</div>
+    <div class="sp">Sales Outreach Automation</div>
+    <div class="sgap">Referral-dependent BD; no outbound process</div>
+    <div class="simp"><span class="ck2">✓</span>Scalable outbound; automated LinkedIn/email</div>
+    <div class="sprice">₹11,100/yr (3 mo)</div>
+  </div>
+  <div class="sr" style="background:#f8fafc">
+    <div class="st" style="font-size:12px">Total annual investment</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="sprice" style="font-size:13px;font-weight:700">₹3,09,876/yr<div class="scost-sub" style="color:#d97706;font-weight:600">+ ₹40,000 setup</div></div>
+  </div>
+</div></div>
 
 <div class="footer">Prepared by iSpeak Corporate Services &nbsp;·&nbsp; 4D Retail Design &nbsp;·&nbsp; Confidential</div>
 </div>
